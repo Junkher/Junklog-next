@@ -1,0 +1,24 @@
+:root {
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 751px) {
+  #docsearch-container:lang(zh-CN) {
+    min-width: 184.66px;
+  }
+}
+
+.theme-container.poem {
+  $poem-content-width: 25rem;
+  .page-top-content {
+    max-width: $poem-content-width;
+  }
+  .theme-junk-content {
+    max-width: $poem-content-width;
+    div > p {
+      font-size: 1rem;
+      font-weight: 250;
+      margin: 2rem 0;
+    }
+  }
+}
