@@ -1,8 +1,6 @@
 ---
 title: commonJS vs esModule
 date: 2022-10-01T19:58:47+08:00
-category: 
-  - Tech
 tags: []
 description: ""
 cover: ""

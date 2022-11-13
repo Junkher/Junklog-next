@@ -1,8 +1,6 @@
 ---
 title: nginx
 date: 2022-08-31T17:19:29+08:00
-category: 
-  - Tech
 tags: []
 description: ""
 cover: ""

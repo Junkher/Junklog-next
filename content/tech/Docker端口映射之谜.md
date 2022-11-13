@@ -1,8 +1,6 @@
 ---
 title: Docker端口映射之谜
 date: 2022-07-19T22:58:51+08:00
-category: 
-  - Tech
 tags: []
 description: ""
 draft: "true"

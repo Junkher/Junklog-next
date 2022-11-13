@@ -1,8 +1,6 @@
 ---
 title: 从零开发一个Vuepress主题
 date: 2022-09-30T19:15:21+08:00
-category: 
-  - Tech
 tags: []
 description: ""
 cover: ""

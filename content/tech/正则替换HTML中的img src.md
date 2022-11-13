@@ -1,8 +1,6 @@
 ---
 title: 正则替换HTML中的img src
 date: 2022-07-20T18:21:45+08:00
-category: 
-  - Tech
 tags: []
 description: ""
 draft: true

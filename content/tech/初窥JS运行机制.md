@@ -1,8 +1,6 @@
 ---
 title: 初窥JS运行机制
 date: 2022-07-19T22:51:22+08:00
-category: 
-  - Tech
 tags: []
 description: "JavaScript是单线程，通过事件循环机制来处理异步操作"
 cover: "https://s2.loli.net/2022/07/20/wlOdJtpFgi51Wkr.png"

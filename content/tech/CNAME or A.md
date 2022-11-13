@@ -1,11 +1,10 @@
 ---
 title: CNAME or A
 date: 2022-07-10T09:41:52+08:00
-category: 
-  - Tech
 tags: []
 description: "白嫖的顶级域名怎么用"
 cover: "https://s2.loli.net/2022/09/23/7I31gfCnxMeUKPw.png"
+toc: true
 ---
 
 > 在博客搭建好之后，心满意足如沐春风，但当注意到网站那个非常ugly的域名(没错，说的就是vercel)，一定会产生要弄一个只属于自己的专属域名的想法。 尤其是*.vercel.app(反复鞭尸)已经被墙(DNS cache pollution)，这下是真的不得不使用自己的域名了。

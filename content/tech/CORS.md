@@ -1,8 +1,6 @@
 ---
 title: CORS
 date: 2022-07-30T10:53:11+08:00
-category: 
-  - Tech
 tags: []
 description: ""
 draft: "true"

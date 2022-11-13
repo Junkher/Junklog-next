@@ -1,8 +1,6 @@
 ---
 title: npm publish
 date: 2022-09-27T18:45:21+08:00
-category: 
-  - Tech
 tags: []
 description: ""
 cover: ""

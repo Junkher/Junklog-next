@@ -1,8 +1,6 @@
 ---
 title: 从零开发一个Hugo主题？
 date: 2022-07-09T22:48:50+08:00
-category: 
-  - Tech
 tags: []
 description: "工欲善其事，必先利其器"
 cover: "https://s2.loli.net/2022/07/09/ijfak6GqEnxXFJI.png"

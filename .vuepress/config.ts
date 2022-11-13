@@ -4,7 +4,7 @@ import { webpackBundler } from '@vuepress/bundler-webpack'
 import { defineUserConfig } from '@vuepress/cli'
 import { shikiPlugin } from '@vuepress/plugin-shiki'
 import { junkTheme } from 'vuepress-theme-junk'
-import { head } from './configs'
+import { head } from './configs/index.js'
 
 // const __dirname = getDirname(import.meta.url)
 const isProd = process.env.NODE_ENV === 'production'
@@ -34,6 +34,7 @@ export default defineUserConfig({
   bundler:
     process.env.DOCS_BUNDLER === 'webpack' ? webpackBundler() : viteBundler(),
 
+  // specify the pages to be create
   pagePatterns: [
     'content/life/*.md',
     'content/poem/*.md',
@@ -41,6 +42,13 @@ export default defineUserConfig({
     '!.vuepress',
     '!node_modules',
   ],
+
+  // simplify the route path of page
+  extendsPage: (page) => {
+    if (page.filePathRelative?.startsWith('content')) {
+      page.path = page.path.replace('/content', '')
+    }
+  },
 
   // configure default theme
   theme: junkTheme({
@@ -54,6 +62,7 @@ export default defineUserConfig({
     it's simply my way to be alone.
      `,
     heroBtnText: 'FK ME',
+
     footer: '<p>© 2022-present Junklog - All right reserved</p>',
 
     personalInfo: {
@@ -67,6 +76,25 @@ export default defineUserConfig({
         telegram: 'https://t.me/junkh_er',
       },
     },
+    
+
+    menuGroups: [
+      {
+        path: '/poem/',
+        name: 'POEM',
+        weight: 1,
+      },
+      {
+        path: '/life/',
+        name: 'LIFE',
+        weight: 2,
+      },
+      {
+        path: '/tech/',
+        name: 'TECH',
+        weight: 3,
+      },
+    ],
 
     // theme-level locales config
     locales: {
@@ -99,15 +127,15 @@ export default defineUserConfig({
         // a11y
         openInNewWindow: '在新窗口打开',
         toggleColorMode: '切换颜色模式',
-        toggleSidebar: '切换侧边栏',
+        toggleFullscreen: '切换全屏模式',
       },
     },
 
     themePlugins: {
+      // only enable git plugin in production mode
+      git: isProd,
       // use shiki plugin in production mode instead
       prismjs: !isProd,
-      activeHeaderLinks: true,
-      mediumZoom: true,
     },
   }),
 
@@ -120,6 +148,7 @@ export default defineUserConfig({
       level: [1, 2],
     },
   },
+
   // use plugins
   plugins: [
     // only enable shiki plugin in production mode

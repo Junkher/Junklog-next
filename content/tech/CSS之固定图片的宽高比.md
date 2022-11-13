@@ -1,8 +1,6 @@
 ---
 title: CSS之固定图片的宽高比
 date: 2022-08-03T00:07:16+08:00
-category: 
-  - Tech
 tags: []
 description: "利用padding-top/bottom的%{}特性"
 cover: "https://s2.loli.net/2022/08/03/XIfxtmaiRvV3hCs.png"

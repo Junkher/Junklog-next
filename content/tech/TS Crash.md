@@ -1,8 +1,6 @@
 ---
 title: TS Crash
 date: 2022-08-03T22:41:41+08:00
-category: 
-  - Tech
 tags: []
 description: "一入TS深似海"
 cover: "https://s2.loli.net/2022/08/03/xoQZ6RwmaG7VNqj.png"

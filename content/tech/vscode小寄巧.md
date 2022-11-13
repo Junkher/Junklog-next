@@ -1,8 +1,6 @@
 ---
 title: vscode小寄巧
 date: 2022-07-19T22:55:49+08:00
-category: 
-  - Tech
 tags: []
 description: ""
 draft: true
