@@ -21,7 +21,7 @@ draft: "true"
 ```
 
 
-```
+```sh
 $ docker port postgres-server
 5432/tcp -> 0.0.0.0:5437
 5432/tcp -> :::5437

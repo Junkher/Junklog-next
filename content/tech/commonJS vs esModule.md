@@ -10,6 +10,7 @@ draft: true
 
 https://www.youtube.com/watch?v=mK54Cn4ceac
 
+https://www.freecodecamp.org/news/modules-in-javascript/#:~:text=CommonJS%20is%20mainly%20used%20in,CommonJS%20looks%20in%20actual%20code.
 
 ## runtime vs parsetime
 

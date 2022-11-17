@@ -3,7 +3,7 @@ title: CNAME or A
 date: 2022-07-10T09:41:52+08:00
 tags: []
 description: "白嫖的顶级域名怎么用"
-cover: "https://s2.loli.net/2022/09/23/7I31gfCnxMeUKPw.png"
+cover: "https://s2.loli.net/2022/11/17/mbYQfBPSUDEy8vi.png"
 toc: true
 ---
 
@@ -73,7 +73,7 @@ CNAME记录是存储域名和域名之间的映射关系，从而使得多个域
 
 
 
-## Ref
+## Refs
 
 1. https://cloud.tencent.com/developer/article/1349559
 2. https://www.noip.com/support/knowledgebase/what-is-the-difference-between-a-cname-record-a-record-and-redirect/
