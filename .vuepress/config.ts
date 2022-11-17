@@ -50,6 +50,14 @@ export default defineUserConfig({
     }
   },
 
+  // add pageClass to poems frontmatter
+  extendsPageOptions: (pageOption, app) => {
+    if(pageOption.filePath?.startsWith(app.dir.source('content/poem'))) {
+      pageOption.frontmatter ??= {}
+      pageOption.frontmatter.pageClass = 'poem'
+    }
+  },
+
   // configure default theme
   theme: junkTheme({
     logo: '/images/logo.png',
