@@ -212,6 +212,30 @@ declare module '*.vue' {
 
 VuePress无法在`setup()`阶段使用Browser/DOM APIs(比如全局变量`document`)，可以在`onBeforeMount()` 或 `onMounted()` hook中使用。
 
+#### Vue Route
+
+每一个vue实例都有生命周期，Composition API时代中常用的Lifecycle Hooks函数有`onBeforeMount`、`onMounted`、`onBeforeUpdate`、`onUpdated`。曾经的`onCreated`则变为直接写在`setup`函数体内。
+而vue路由切换也有生命周期以及[Navigation Guards](https://router.vuejs.org/guide/advanced/navigation-guards.html)，经过实践，当路由切换，`route.path`的更新是发生在`onMounted`和`onBeforeUpdate`之间。当有变量需要使用当前页面的路径比如`route.path`，使用`computed`来获取更新后正确的路由信息。
+
+```ts
+const route = useRoute()
+console.log('onCreated', route.path)
+onBeforeMount(() => {
+console.log('onBeforeMounted', route.path)
+})
+onMounted(() => {
+console.log('onMounted', route.path)
+})
+onBeforeUpdate(() => {
+console.log('onBeforeUpdate', route.path)
+})
+onUpdated(() => {
+console.log('onUpdated', route.path)
+})
+const currentIndex = computed(() => posts.findIndex((item) => item.path === route.path))
+```
+
+
 ### Others
 
 #### modify commit

@@ -12,7 +12,7 @@ specifiers:
   tsconfig-vuepress: ^4.0.0
   vue: ^3.2.41
   vuepress: 2.0.0-beta.53
-  vuepress-theme-junk: 2.0.0-beta.7
+  vuepress-theme-junk: 2.0.0-beta.8
 
 devDependencies:
   '@vuepress/bundler-vite': 2.0.0-beta.53
@@ -26,7 +26,7 @@ devDependencies:
   tsconfig-vuepress: 4.0.0
   vue: 3.2.41
   vuepress: 2.0.0-beta.53_dkfen5jh5waidbcncwb2iemhwm
-  vuepress-theme-junk: 2.0.0-beta.7
+  vuepress-theme-junk: 2.0.0-beta.8
 
 packages:
 
@@ -4289,8 +4289,8 @@ packages:
       - supports-color
     dev: true
 
-  /vuepress-plugin-menu/2.0.0-beta.7:
-    resolution: {integrity: sha512-DtsFYOEQIgMBY6lLVjLV+84XIJNog+Ijcy7JrHUcO1bkZdemMJ/QWYX5WERTK4UdoFTbe9UsGZDiqMn8i7LmDg==}
+  /vuepress-plugin-menu/2.0.0-beta.8:
+    resolution: {integrity: sha512-vJocSg5652sMJhk7Mk4aYXIlwwdz9qIHSzw+H6YwNM9lv5iKWpYBPqGS2VWJ4/XFm4sMnunRbSByKgzSc2Wp/g==}
     dependencies:
       '@vuepress/client': 2.0.0-beta.53
       '@vuepress/core': 2.0.0-beta.53
@@ -4320,8 +4320,8 @@ packages:
       - supports-color
     dev: true
 
-  /vuepress-theme-junk/2.0.0-beta.7:
-    resolution: {integrity: sha512-SciRfE4QsFXGfZMJItzO7BeYa2guAq9oAGmEHV+fNEYcprXDsh/yqugvLbftT/kxE/kJcVV/iYYjW9SB4pgFOg==}
+  /vuepress-theme-junk/2.0.0-beta.8:
+    resolution: {integrity: sha512-91GTj8bYwg2UHPUMr3mWTbPmBPXKF2Ym8ZVt481I6I52Zd1T30xvcPa2fovmuVRdhDepmVzoo1UcwfpmyvXEZw==}
     peerDependencies:
       sass-loader: ^13.0.2
     peerDependenciesMeta:
@@ -4353,7 +4353,7 @@ packages:
       vue: 3.2.41
       vue-router: 4.1.6_vue@3.2.41
       vuepress-plugin-blog2: 2.0.0-beta.116
-      vuepress-plugin-menu: 2.0.0-beta.7
+      vuepress-plugin-menu: 2.0.0-beta.8
     transitivePeerDependencies:
       - '@vue/composition-api'
       - less
