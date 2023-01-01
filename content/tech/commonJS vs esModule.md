@@ -15,6 +15,5 @@ https://www.freecodecamp.org/news/modules-in-javascript/#:~:text=CommonJS%20is%2
 ## runtime vs parsetime
 
 
-
-
 - dirname is not defined in ES module scope
+- 

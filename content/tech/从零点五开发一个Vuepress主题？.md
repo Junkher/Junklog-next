@@ -87,6 +87,17 @@ tsconfig.json中设置`moduleResolution:NodeNext` 时就会导致原本可调用
 }
 ```
 
+#### line clamp
+
+按行数截断，并于末尾添加省略号
+```scss
+@mixin line_clamp($value) {
+  display: -webkit-box;
+  -webkit-line-clamp: $value;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+```
 
 #### nth-child
 
@@ -206,6 +217,45 @@ declare module '*.vue' {
 ```
 **shim**这个单词很有意思，可译为垫片。这类文件的作用就是让tsc认识`import`的module。
 
+
+#### promise or async/await 
+
+`async/await`是寄生于`Promise`和[Generator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator)的语法糖，都可用于实现异步。以下是返回一个promise对象的函数的两种实现方式。
+```ts
+const pageProvider1 = (pageNumber: number, pageSize: number) =>
+  new Promise<string[]>((resolve) =>
+    setTimeout(
+      () => resolve(new Array<string>(pageSize).fill('x')),
+      Math.round(3000 * Math.random())
+    )
+  )
+/*******************************************************************/
+const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
+
+const pageProvider2 = async (pageNumber: number, pageSize: number) => {
+  await delay(Math.round(3000 * Math.random()))
+  return new Array<string>(pageSize).fill('x')
+}
+```
+
+#### curry
+
+> Currying is a transformation of functions that translates a function from callable as f(a, b, c) into callable as f(a)(b)(c).
+
+简单举例来说就是可以把一个函数`f(a,b,c)`转化成`f(a)(b)(c)`的形式，可用于将某些通用的函数转化为特定用途的函数(通过指定某个参数)。
+
+```ts
+import { curry } from 'ramda'
+
+const generalLog = curry((date, importance, message) => {
+  alert(`[${date.getHours()}:${date.getMinutes()}] [${importance}] ${message}`);
+})
+const nowLog = generalLog(new Date()) 
+```
+
+
+### Vue
+
 #### Vue SSR
 
  > lifecycle hooks such as onMounted or onUpdated will NOT be called during SSR and will only be executed on the client.
@@ -234,6 +284,13 @@ console.log('onUpdated', route.path)
 })
 const currentIndex = computed(() => posts.findIndex((item) => item.path === route.path))
 ```
+
+#### Virtual List/Scroller
+
+无限滚动的分页方式必然带来的问题就是DOM节点越来越多，从而导致页面卡顿。**虚拟列表/滚动**则是通过只渲染视口(viewport)即用户可视范围内的DOM节点，从而节约性能消耗。
+- [5 best virtual scroll components](https://www.vuescript.com/best-virtual-scrolling/)  
+- [`useVirtualList`](https://vueuse.org/core/usevirtuallist/)
+- [`vue-virtual-scroll-grid`](`https://github.com/rocwang/vue-virtual-scroll-grid)(1.10.0存在bug，1.9.0可用)
 
 
 ### Others
