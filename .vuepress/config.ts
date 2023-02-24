@@ -74,10 +74,10 @@ export default defineUserConfig({
     footer: '<p>© 2022-present Junklog - All right reserved</p>',
 
     personalInfo: {
-      name: '雅佚',
+      name: '訝異',
       avatar: '/images/avatar.png',
       banner: '/images/banner.jpg',
-      bio: 'Tritype-147. 没什么理想的理想主义者:) 不必訝異, 無須歡喜 ',
+      bio: 'Tritype-147. 不是诗人. 没什么理想的理想主义者:) 不必訝異, 無須歡喜 ',
       sns: {
         github: 'https://github.com/Junkher',
         email: 'mailto:k1344065492@gmail.com',
