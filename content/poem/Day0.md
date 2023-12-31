@@ -2,7 +2,7 @@
 title: Day0
 date: 2023-12-31T13:19:54+08:00
 description: 继续务虚  继续徒劳有功
-cover: https://cdn.jsdelivr.net/gh/junkher/junklog-next/.vuepress/public/images/poem/Day0.jpg
+cover: https://cdn.jsdelivr.net/gh/junkher/junklog-next/.vuepress/public/images/poem/day0.jpg
 ---
 
 继续务虚
